@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Pixel Studio</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: #030712;
+      color: #ffffff;
+      font-family: ui-sans-serif, system-ui, sans-serif;
+    }
+    .glow-blue {
+      box-shadow: 0 0 35px rgba(59, 130, 246, 0.25);
+    }
+    .card-border {
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(15, 23, 42, 0.7);
+      backdrop-filter: blur(10px);
+    }
+    .card-border:hover {
+      border-color: rgba(59, 130, 246, 0.6);
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+
+  <!-- NAVBAR -->
+  <nav class="flex items-center justify-between px-6 py-4 border-b border-slate-800/60 max-w-7xl mx-auto">
+    <div class="flex items-center gap-2">
+      <i class="fa-solid fa-crown text-blue-500 text-2xl"></i>
+      <div>
+        <h1 class="text-xl font-bold tracking-wide leading-tight text-white">Royal Pixel <span class="text-blue-500">Studio</span></h1>
+        <p class="text-[10px] text-gray-400 -mt-1 tracking-wider">Edit • Design • Create</p>
+      </div>
+    </div>
+    <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+      <a href="#" class="text-blue-400 border-b-2 border-blue-500 pb-1">Home</a>
+      <a href="#services" class="hover:text-blue-400 transition">Services</a>
+      <a href="#portfolio" class="hover:text-blue-400 transition">Work Examples</a>
+    </div>
+    <a href="https://wa.me/919999999999" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-lg flex items-center gap-2 transition">
+      <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp
+    </a>
+  </nav>
+
+  <!-- HERO SECTION WITH REAL WORKING VIDEO -->
+  <section class="max-w-7xl mx-auto px-6 pt-10 pb-12 grid md:grid-cols-2 gap-8 items-center">
+    <div>
+      <span class="inline-block px-3 py-1 text-xs font-semibold text-blue-400 bg-blue-950/60 border border-blue-800/50 rounded-full mb-4">
+        Creative Editing & Design Services
+      </span>
+      <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-3 leading-tight">
+        Your Ideas,<br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Our Editing Magic</span>
+      </h1>
+      <p class="text-gray-400 text-xs md:text-sm mb-5 leading-relaxed">
+        Photo Editing, Video Editing, Graphic Design aur bahut kuch...<br>
+        Sab kuch ek hi jagah, professional quality ke saath.
+      </p>
+      
+      <div class="flex flex-wrap gap-3 text-xs text-gray-300 mb-6">
+        <span class="flex items-center gap-1"><i class="fa-solid fa-bolt text-yellow-400"></i> Fast Delivery</span>
+        <span class="flex items-center gap-1"><i class="fa-solid fa-shield-halved text-blue-400"></i> 100% Quality</span>
+        <span class="flex items-center gap-1"><i class="fa-solid fa-star text-yellow-400"></i> Affordable Price</span>
+        <span class="flex items-center gap-1"><i class="fa-solid fa-heart text-red-500"></i> Customer Support</span>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/919999999999" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-5 py-2 rounded-lg text-xs flex items-center gap-2 transition">
+          Order Now <i class="fa-solid fa-arrow-right text-[10px]"></i>
+        </a>
+        <a href="#portfolio" class="border border-slate-700 hover:border-slate-500 text-gray-300 font-medium px-5 py-2 rounded-lg text-xs flex items-center gap-2 transition">
+          <i class="fa-regular fa-circle-play"></i> View Work
+        </a>
+      </div>
+    </div>
+
+    <!-- REAL WORKING VIDEO PLAYER MOCKUP -->
+    <div class="relative flex justify-center items-center">
+      <div class="w-full max-w-sm p-3 bg-slate-900/90 border border-slate-800 rounded-xl glow-blue relative">
+        <div class="flex items-center justify-between pb-2 border-b border-slate-800 mb-2">
+          <div class="flex gap-1.5">
+            <div class="w-2.5 h-2.5 rounded-full bg-red-500"></div>
+            <div class="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
+            <div class="w-2.5 h-2.5 rounded-full bg-green-500"></div>
+          </div>
+          <span class="text-[9px] text-gray-400 font-mono">Editing_Showreel.mp4</span>
+        </div>
+        
+        <!-- HTML5 Video Tag (Auto Play, Loop, Muted) -->
+        <div class="aspect-video bg-slate-950 rounded-lg overflow-hidden relative border border-slate-800">
+          <video autoplay muted loop playsinline class="w-full h-full object-cover">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-digital-animation-of-screens-and-numbers-31950-large.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="absolute bottom-2 left-2 bg-slate-950/80 px-2 py-0.5 rounded text-[9px] text-blue-400 font-mono border border-slate-700">
+            <i class="fa-solid fa-circle-dot text-red-500 animate-pulse mr-1"></i> Live Showreel
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR SERVICES -->
+  <section id="services" class="max-w-7xl mx-auto px-6 py-10">
+    <div class="text-center mb-8">
+      <span class="text-xs font-semibold tracking-wider text-blue-400 uppercase">Our Services</span>
+      <h2 class="text-xl md:text-2xl font-bold mt-1">What We Do</h2>
+      <p class="text-gray-400 text-xs mt-1">Har kaam ko hum passion ke saath karte hain. Aapka idea, hamari editing.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-3">
+      
+      <div class="card-border p-4 rounded-xl transition">
+        <div class="w-8 h-8 rounded-lg bg-blue-600/20 text-blue-400 flex items-center justify-center text-sm mb-3">
+          <i class="fa-regular fa-image"></i>
+        </div>
+        <h3 class="font-bold text-xs mb-1">Photo Editing</h3>
+        <p class="text-gray-400 text-[11px] mb-3">Background change, face retouch, color correction & more.</p>
+        <button onclick="openModal('Photo Editing', 'Starting ₹99', '• High-End Color Correction\n• Face & Skin Retouching\n• Background Removal/Change\n• HD/4K Quality Output')" class="text-blue-400 text-[11px] font-semibold flex items-center gap-1 hover:underline">
+          Know More &rarr;
+        </button>
+      </div>
+
+      <div class="card-border p-4 rounded-xl transition">
+        <div class="w-8 h-8 rounded-lg bg-purple-600/20 text-purple-400 flex items-center justify-center text-sm mb-3">
+          <i class="fa-solid fa-video"></i>
+        </div>
+        <h3 class="font-bold text-xs mb-1">Video Editing</h3>
+        <p class="text-gray-400 text-[11px] mb-3">Reels, YouTube Shorts, wedding, travel & promo videos.</p>
+        <button onclick="openModal('Video Editing', 'Starting ₹299', '• Cinematic Color Grading\n• Smooth Transitions & Effects\n• Engaging Subtitles & Audio Sync\n• High-Engagement Reels & Shorts')" class="text-blue-400 text-[11px] font-semibold flex items-center gap-1 hover:underline">
+          Know More &rarr;
+        </button>
+      </div>
+
+      <div class="card-border p-4 rounded-xl transition">
+        <div class="w-8 h-8 rounded-lg bg-pink-600/20 text-pink-400 flex items-center justify-center text-sm mb-3">
+          <i class="fa-solid fa-pen-nib"></i>
+        </div>
+        <h3 class="font-bold text-xs mb-1">Graphic Design</h3>
+        <p class="text-gray-400 text-[11px] mb-3">Posters, thumbnails, banners & social media posts.</p>
+        <button onclick="openModal('Graphic Design', 'Starting ₹149', '• High CTR YouTube Thumbnails\n• Social Media Posters & Banners\n• Custom Gaming & Event Graphics\n• Eye-Catching Typography')" class="text-blue-400 text-[11px] font-semibold flex items-center gap-1 hover:underline">
+          Know More &rarr;
+        </button>
+      </div>
+
+      <div class="card-border p-4 rounded-xl transition">
+        <div class="w-8 h-8 rounded-lg bg-emerald-600/20 text-emerald-400 flex items-center justify-center text-sm mb-3">
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+        <h3 class="font-bold text-xs mb-1">Website Design</h3>
+        <p class="text-gray-400 text-[11px] mb-3">Business website, portfolio, landing pages & more.</p>
+        <button onclick="openModal('Website Design', 'Starting ₹1,499', '• Modern & Responsive Dark Layout\n• Fast Loading Speed\n• Direct WhatsApp Chat Integration\n• Complete Mobile Optimization')" class="text-blue-400 text-[11px] font-semibold flex items-center gap-1 hover:underline">
+          Know More &rarr;
+        </button>
+      </div>
+
+      <div class="card-border p-4 rounded-xl transition">
+        <div class="w-8 h-8 rounded-lg bg-amber-600/20 text-amber-400 flex items-center justify-center text-sm mb-3">
+          <i class="fa-solid fa-paintbrush"></i>
+        </div>
+        <h3 class="font-bold text-xs mb-1">Logo Design</h3>
+        <p class="text-gray-400 text-[11px] mb-3">Modern, unique and professional logos for brand identity.</p>
+        <button onclick="openModal('Logo Design', 'Starting ₹299', '• Unique Vector Logos\n• High-Res PNG & Transparent Files\n• Mascot & Branding Logos\n• Source File Provided')" class="text-blue-400 text-[11px] font-semibold flex items-center gap-1 hover:underline">
+          Know More &rarr;
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WORK EXAMPLES WITH REAL HIGH-QUALITY IMAGES -->
+  <section id="portfolio" class="max-w-7xl mx-auto px-6 py-10">
+    <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800/80 glow-blue">
+      <div class="text-center mb-6">
+        <span class="text-xs font-semibold tracking-wider text-blue-400 uppercase">Work Examples</span>
+        <h2 class="text-xl md:text-2xl font-extrabold mt-1 tracking-wide">OUR LATEST WORK</h2>
+        <p class="text-gray-400 text-xs mt-1">Kuch recent samples aur creative designs jo humne tayar kiye hain!</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        
+        <!-- Sample 1 -->
+        <div class="card-border rounded-xl p-3 flex flex-col justify-between">
+          <div class="h-32 rounded-lg overflow-hidden border border-slate-800 relative">
+            <img src="https://images.unsplash.com/photo-1542744094-3a31b272c490?auto=format&fit=crop&w=600&q=80" alt="Photo Retouch" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+            <span class="absolute top-2 left-2 bg-black/70 px-2 py-0.5 rounded text-[9px] text-blue-400">Photo Editing</span>
+          </div>
+          <div class="mt-2.5 flex justify-between items-center text-xs">
+            <span class="text-[11px] font-bold text-gray-200">Cinematic Photo Retouch</span>
+            <button onclick="openModal('Photo Retouch Sample', 'Starting ₹99', 'High precision skin smoothing, professional color grading and lighting adjustments.')" class="text-[11px] text-blue-400 font-semibold hover:underline">Details</button>
+          </div>
+        </div>
+
+        <!-- Sample 2 -->
+        <div class="card-border rounded-xl p-3 flex flex-col justify-between">
+          <div class="h-32 rounded-lg overflow-hidden border border-slate-800 relative">
+            <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=600&q=80" alt="Thumbnail Design" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+            <span class="absolute top-2 left-2 bg-black/70 px-2 py-0.5 rounded text-[9px] text-red-400">Thumbnail</span>
+          </div>
+          <div class="mt-2.5 flex justify-between items-center text-xs">
+            <span class="text-[11px] font-bold text-gray-200">Gaming & YouTube Thumbnail</span>
+            <button onclick="openModal('Gaming Thumbnail', 'Starting ₹149', 'Eye-catching glow effects, custom text, and high CTR visual elements.')" class="text-[11px] text-blue-400 font-semibold hover:underline">Details</button>
+          </div>
+        </div>
+
+        <!-- Sample 3 -->
+        <div class="card-border rounded-xl p-3 flex flex-col justify-between">
+          <div class="h-32 rounded-lg overflow-hidden border border-slate-800 relative">
+            <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=600&q=80" alt="Video Editing" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+            <span class="absolute top-2 left-2 bg-black/70 px-2 py-0.5 rounded text-[9px] text-purple-400">Reels / Video</span>
+          </div>
+          <div class="mt-2.5 flex justify-between items-center text-xs">
+            <span class="text-[11px] font-bold text-gray-200">Instagram Reel / Short Video</span>
+            <button onclick="openModal('Reel Editing', 'Starting ₹299', 'Engaging motion captions, background music sync, and trending beat-cuts.')" class="text-[11px] text-blue-400 font-semibold hover:underline">Details</button>
+          </div>
+        </div>
+
+        <!-- Sample 4 -->
+        <div class="card-border rounded-xl p-3 flex flex-col justify-between">
+          <div class="h-32 rounded-lg overflow-hidden border border-slate-800 relative">
+            <img src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=600&q=80" alt="Logo Design" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+            <span class="absolute top-2 left-2 bg-black/70 px-2 py-0.5 rounded text-[9px] text-amber-400">Logo Design</span>
+          </div>
+          <div class="mt-2.5 flex justify-between items-center text-xs">
+            <span class="text-[11px] font-bold text-gray-200">Vector Brand Logo</span>
+            <button onclick="openModal('Logo Design', 'Starting ₹299', 'Vector geometry, transparent background files, and 3D mockup display.')" class="text-[11px] text-blue-400 font-semibold hover:underline">Details</button>
+          </div>
+        </div>
+
+        <!-- Sample 5 -->
+        <div class="card-border rounded-xl p-3 flex flex-col justify-between">
+          <div class="h-32 rounded-lg overflow-hidden border border-slate-800 relative">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Website Design" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+            <span class="absolute top-2 left-2 bg-black/70 px-2 py-0.5 rounded text-[9px] text-emerald-400">Website</span>
+          </div>
+          <div class="mt-2.5 flex justify-between items-center text-xs">
+            <span class="text-[11px] font-bold text-gray-200">Business & Portfolio Site</span>
+            <button onclick="openModal('Website Design', 'Starting ₹1,499', 'Fully functional website with modern animations and WhatsApp order integration.')" class="text-[11px] text-blue-400 font-semibold hover:underline">Details</button>
+          </div>
+        </div>
+
+        <!-- Sample 6 -->
+        <div class="card-border rounded-xl p-3 flex flex-col justify-between">
+          <div class="h-32 rounded-lg overflow-hidden border border-slate-800 relative">
+            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&q=80" alt="Poster Design" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+            <span class="absolute top-2 left-2 bg-black/70 px-2 py-0.5 rounded text-[9px] text-pink-400">Graphic Poster</span>
+          </div>
+          <div class="mt-2.5 flex justify-between items-center text-xs">
+            <span class="text-[11px] font-bold text-gray-200">Social Media Poster</span>
+            <button onclick="openModal('Social Media Poster', 'Starting ₹99', 'Custom promotional banners designed for Instagram and Facebook marketing.')" class="text-[11px] text-blue-400 font-semibold hover:underline">Details</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- POPUP MODAL -->
+  <div id="detailsModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 z-50 hidden">
+    <div class="bg-slate-900 border border-slate-700 w-full max-w-sm p-5 rounded-xl glow-blue relative">
+      <button onclick="closeModal()" class="absolute top-3 right-3 text-gray-400 hover:text-white text-base">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      
+      <h3 id="modalTitle" class="text-lg font-bold text-blue-400 mb-1">Service Details</h3>
+      <div id="modalPrice" class="text-xl font-extrabold text-white mb-3">Price</div>
+      
+      <p class="text-[11px] text-gray-400 mb-1.5 font-semibold">Included Work & Features:</p>
+      <div id="modalFeatures" class="text-xs text-gray-300 bg-slate-950 p-3 rounded-lg border border-slate-800 mb-5 whitespace-pre-line leading-relaxed">
+        Features list...
+      </div>
+
+      <a href="https://wa.me/919999999999" target="_blank" class="w-full block text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg text-xs transition">
+        <i class="fa-brands fa-whatsapp mr-1.5"></i> Order via WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-800/80 mt-10 bg-slate-950/60 py-6">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+      <div class="flex items-center gap-2 justify-center">
+        <i class="fa-solid fa-crown text-blue-500 text-lg"></i>
+        <span class="font-bold text-xs">Royal Pixel Studio</span>
+      </div>
+      <p class="text-[11px] text-gray-500">&copy; 2026 Royal Pixel Studio. All rights reserved.</p>
+      <div class="flex gap-4 text-gray-400 text-sm justify-center">
+        <a href="#" class="hover:text-blue-400"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" class="hover:text-blue-400"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="hover:text-blue-400"><i class="fa-brands fa-telegram"></i></a>
+        <a href="#" class="hover:text-blue-400"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    function openModal(title, price, features) {
+      document.getElementById('modalTitle').innerText = title;
+      document.getElementById('modalPrice').innerText = price;
+      document.getElementById('modalFeatures').innerText = features;
+      document.getElementById('detailsModal').classList.remove('hidden');
+    }
+
+    function closeModal() {
+      document.getElementById('detailsModal').classList.add('hidden');
+    }
+  </script>
+
+</body>
+</html>
